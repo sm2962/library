@@ -1,0 +1,100 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* New Book Button */
+#newBookBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#newBookBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Book Card Styles */
+.book-card {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.book-card h3 {
+  margin-top: 0;
+}
+
+.book-card button {
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-card button.remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.book-card button.toggle-read-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Dialog Modal */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+form button#cancelBtn {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 10px;
+}
