@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/script.js" defer></script>
-     <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Library</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1> My Libary </h1>
-    <div id="libraryDisplay"> </div>
-    <button id="newBookBtn">New Book</button>
+  <h1>My Library</h1>
+  <button id="newBookBtn">New Book</button>
 
-<dialog id="bookFormDialog">
-  <form id="bookForm">
-    <label>
-      Title:
-      <input type="text" name="title" required />
-    </label><br/>
-    <label>
-      Author: 
-      <input type="text" name="author" required />
-    </label><br/>
-    <label>
-      Pages:
-      <input type="number" name="pages" required min="1" />
-    </label><br/>
-    <label>
-      Read:
-      <input type="checkbox" name="readBook" />
-    </label><br/>
-    <button type="submit">Add Book</button>
-    <button type="button" id="cancelBtn">Cancel</button>
-  </form>
-</dialog>
-<div id="libraryDisplay"></div>
+  <dialog id="bookFormDialog">
+    <form id="bookForm">
+      <label>
+        Title: <input type="text" name="title" required />
+      </label><br/>
+      <label>
+        Author: <input type="text" name="author" required />
+      </label><br/>
+      <label>
+        Pages: <input type="number" name="pages" required min="1" />
+      </label><br/>
+      <label>
+        Read: <input type="checkbox" name="readBook" />
+      </label><br/>
+      <button type="submit">Add Book</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+  </dialog>
 
-
+  <div id="libraryDisplay"></div>
 </body>
 </html>
